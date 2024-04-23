@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather, #news, #air-quality {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #0056b3;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#news-list li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+#news-list li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #weather, #news, #air-quality {
+        width: 95%;
+    }
+}
+
+h1 i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+#weather i.fa-cloud-sun, #air-quality i.fa-wind {
+    color: #f39c12; /* sunny color */
+}
+
+#news i.fa-newspaper {
+    color: #34495e; /* news color */
+}
+
